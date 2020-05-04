@@ -34,11 +34,11 @@ public class KeynesianBeautyContest
 	static int[] agentCounts = new int[3];
 	// Misc parameters
 	static final double FRAC = (double)2/3;
-   static final int NUM_AGENTS = 10000;
-   static final int NUM_GENERATIONS = 100000;
-   static final int NUM_ROUNDS = 100;
-   static final double DEATH_RATE = 0.01;
-   static final double MUTATION_RATE = 0.001;
+   	static final int NUM_AGENTS = 10000;
+   	static final int NUM_GENERATIONS = 100000;
+   	static final int NUM_ROUNDS = 100;
+   	static final double DEATH_RATE = 0.01;
+   	static final double MUTATION_RATE = 0.001;
 	static final double DISPLAY_RATE = 1000;
 
 	// Randomly shuffles the values in an array.
@@ -47,7 +47,7 @@ public class KeynesianBeautyContest
 		Random random = new Random();
 		for (int i = array.length - 1; i > 0; i--)
 		{
-			int index = random.nextInt(i + 1);
+			int index = random.nextInt(array.length);
 			int temp = array[index];
 			array[index] = array[i];
 			array[i] = temp;
