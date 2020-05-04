@@ -80,14 +80,14 @@ public class NewcombsProblem
    // Randomly shuffles the values in an array.
    public static void shuffleArray(int[] array)
    {
-      Random random = new Random();
-      for (int i = array.length - 1; i > 0; i--)
-      {
-         int index = random.nextInt(i + 1);
-         int temp = array[index];
-         array[index] = array[i];
-         array[i] = temp;
-      }
+	Random random = new Random();
+	for (int i = array.length - 1; i > 0; i--)
+	{
+		int index = random.nextInt(array.length);
+		int temp = array[index];
+		array[index] = array[i];
+		array[i] = temp;
+	}
    }
 
 	// Based on the earned utilities of the agents, repopulate the population.
