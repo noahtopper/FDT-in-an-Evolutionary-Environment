@@ -1,5 +1,5 @@
 # FDT-in-an-Evolutionary-Environment
-Code associated with the paper at https://arxiv.org/abs/2005.05154.
+Code associated with the paper at https://arxiv.org/abs/2005.05154. Runs with vanilla Java.
 
 The purpose behind this code is to simulate the behavior of functional and causal decision theory in a few game-theoretical evolutionary environments. For any particular game, we will start off with a large population of agents (say 10,000). We may initially evenly split this population between the agents we are using, although we can experiment with the initial conditions to see what happens. We randomly pair agents from this population to face-off in the game for a number of rounds (say 100). We track the utilities they earn during this time.
 
